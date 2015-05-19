@@ -286,7 +286,7 @@ module.exports = function jasmineNodeTask(grunt) {
     if (typeof options.onComplete !== 'function') {
       options.onComplete = function onComplete(runner) {
         var exitCode = 1;
-        var failedCount = runner.results().failedCount;
+        //var failedCount = runner.results().failedCount;
         grunt.log.writeln('');
         if (!jasmineResult.fail) {
           exitCode = 0;
