@@ -137,15 +137,18 @@ module.exports = function jasmineNodeTask(grunt) {
       });
     }
 
+    /* 
     if (options.useHelpers) {
       jasmine.loadHelpersInFolder(
         options.projectRoot,
         new RegExp('helpers?\\.(' + options.extensions + ')$', 'i')
       );
     }
+    */
 
     try {
-      jasmine.executeSpecsInFolder(options);
+      jasmine.run(options);
+      //jasmine.executeSpecsInFolder(options);
     }
     catch (e) {
       if (options.forceExit) {
