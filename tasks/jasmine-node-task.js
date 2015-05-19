@@ -3,7 +3,7 @@
 
 module.exports = function jasmineNodeTask(grunt) {
 
-  var istanbul = require('istanbul'),
+  var istanbul = require('ibrik'),
     jasmine = require('jasmine-node'),
     merge = require('deepmerge'),
     path = require('path'),
