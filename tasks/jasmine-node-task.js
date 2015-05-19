@@ -288,7 +288,7 @@ module.exports = function jasmineNodeTask(grunt) {
         var exitCode = 1;
         var failedCount = runner.results().failedCount;
         grunt.log.writeln('');
-        if (failedCount === 0) {
+        if (!jasmineResult.fail) {
           exitCode = 0;
           if (options.coverage !== false) {
             exitHandler();
